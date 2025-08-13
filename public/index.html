@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Olá, Docker + Apache!</title>
+    <meta name="description" content="Site estático servindo via Apache (httpd) dentro de um container Docker.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="container">
+      <nav class="nav">
+        <div class="brand">
+          <img src="./assets/docker.svg" alt="" width="28" height="28" aria-hidden="true" />
+          <span>Docker + Apache</span>
+        </div>
+        <button id="themeBtn" class="btn" aria-label="Alternar tema">Alternar tema</button>
+      </nav>
+    </header>
+
+    <main class="container hero">
+      <h1>Olá, Meu Nome é Melissa Martins 🚀</h1>
+      <p>
+        Este site que desensolvi está sendo servido a partir de um container <strong>Apache httpd</strong> usando
+        <strong>Docker Compose</strong>. 
+      </p>
+      <div class="cards">
+        <article class="card">
+          <h2>HTML</h2>
+          <p>A base de tudo! Aqui você estrutura sua página, deixando o conteúdo organizado e fácil de entender.</p>
+        </article>
+        <article class="card">
+          <h2>CSS</h2>
+          <p>Hora de brilhar! Cores, fontes e layouts incríveis para deixar sua página linda e estilosa.</p>
+        </article>
+        <article class="card">
+          <h2>JS</h2>
+          <p>Deixe seu site vivo! Crie interações divertidas e faça o usuário se apaixonar pela experiência.</p>
+        </article>
+      </div>
+      <a class="cta" href="https://httpd.apache.org/" target="_blank" rel="noopener">Documentação do Apache</a>
+    </main>
+
+    <footer class="container footer">
+      <small>Feito com ❤️ para estudos. Atualize algo e veja o hot-reload (via bind mount).</small>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

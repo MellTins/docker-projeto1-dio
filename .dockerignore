@@ -1,0 +1,9 @@
+.git
+.gitignore
+README.md
+LICENSE
+*.md
+node_modules
+Dockerfile
+**/__pycache__/
+**/.DS_Store
